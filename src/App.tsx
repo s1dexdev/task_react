@@ -1,33 +1,17 @@
 import Container from './components/Container';
 import PostList from './components/PostList';
-import * as categories from './utils/constants/postCategory';
+import CategoryList from './components/CategoryList';
+import styles from './App.module.css';
 
-// Posts for testing
-const posts = [
-    {
-        id: 1,
-        title: 'Post info',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ratione?',
-        category: categories.INFORMATIONAL,
-    },
-    {
-        id: 2,
-        title: 'Post entertainment',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ratione?',
-        category: categories.ENTERTAINING,
-    },
-    {
-        id: 3,
-        title: 'Post advertising',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ratione?',
-        category: categories.ADVERTISING,
-    },
-];
+import posts from './utils/posts';
 
 function App() {
     return (
         <Container>
-            <PostList posts={posts} />
+            <div className={styles.listWrapper}>
+                <PostList posts={posts} />
+                <CategoryList posts={posts} />
+            </div>
         </Container>
     );
 }

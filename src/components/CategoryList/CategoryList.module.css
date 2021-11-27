@@ -1,0 +1,17 @@
+.list {
+    margin: 0;
+    padding: 0;
+}
+
+.list__item {
+    margin-bottom: 15px;
+}
+
+.list__item article:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.list__title {
+    margin: 0;
+    margin-bottom: 20px;
+}

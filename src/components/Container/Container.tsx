@@ -1,6 +1,6 @@
 import styles from './Container.module.css';
 
-function Container({ children }: { children: JSX.Element }) {
+function Container({ children }: { children: any }) {
     return <div className={styles.container}>{children}</div>;
 }
 
