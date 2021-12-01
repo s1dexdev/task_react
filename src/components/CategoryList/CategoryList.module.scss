@@ -1,0 +1,21 @@
+.list {
+    display: flex;
+    margin: -15px;
+    padding: 0;
+
+    list-style: none;
+
+    &__item {
+        margin: 15px;
+    }
+
+    &__item article:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        margin: 0 0 20px 0;
+
+        text-align: center;
+    }
+}

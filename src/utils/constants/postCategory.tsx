@@ -1,5 +1,5 @@
-const INFORMATIONAL = 'informational';
-const ENTERTAINING = 'entertaining';
-const ADVERTISING = 'advertising';
+const INFORMATIONAL: string = 'informational';
+const ENTERTAINING: string = 'entertaining';
+const ADVERTISING: string = 'advertising';
 
 export { INFORMATIONAL, ENTERTAINING, ADVERTISING };
